@@ -33,49 +33,49 @@ var days = [0,1,2,3,4,5,6];
 // }
 switch(true){
     case answer===days && gender===female:
-        alert("akosua");
+        alert("AKOSUA");
         break;
     case answer===days && gender===female:
-        alert("Adwoa");
+        alert("ADWOA");
         break; 
     case answer===days && gender===female:
-        alert("Abenaa");
+        alert("ABENAA");
         break;
     case answer===days && gender===female:
-        alert("Akua");
+        alert("AKUA");
         break;
     case answer===days && gender===female:
-        alert("Yaa");
+        alert("YAA");
         break;
     case answer===days && gender===female:
-        alert("Afua");
+        alert("AFUA");
         break;
     case answer===days && gender===female:
-        alert("Ama");
+        alert("AMA");
         break;
     case answer===days && gender===male:
-        alert("akosua");
+        alert("KWASI");
         break;
     case answer===days && gender===male:
-        alert("Adwoa");
+        alert("KWADWO");
         break; 
     case answer===days && gender===male:
-        alert("Abenaa");
+        alert("KWEBENA");
         break;
     case answer===days && gender===male:
-        alert("Akua");
+        alert("KWAKU");
         break;
     case answer===days && gender===male:
-        alert("Yaa");
+        alert("YAW");
         break;
     case answer===days && gender===male:
-        alert("Afua");
+        alert("KOFI");
         break;
     case answer===days && gender===male:
-        alert("Ama");
+        alert("KWAME");
         break;
     default:
-        alert("Invalid day");
+        alert("Invalid days");
     
 
 }
