@@ -4,7 +4,7 @@ var DD = parseInt(prompt("Enter your day of birth")) ;
 var CC = parseInt(prompt("Enter the century digits"));
 var gender = prompt("Enter your gende")
 var dayOfTheWeek =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-var answer = math.floor(dayOfTheWeek);
+var answer = Math.floor(dayOfTheWeek);
 // var days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thusday","Friday","Surtaday"];
 var days = [0,1,2,3,4,5,6];
 // if(days[0] && gender == female){
