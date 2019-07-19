@@ -1,12 +1,12 @@
 var YY =parseInt(prompt("Enter your year of birth"));
 var MM= parseInt(prompt("Enter your month of birth"));
-var DD = parseInt(prompt("Enter your day of birth")) ;
+var DD = parseInt(prompt("Enter the date of your birth")) ;
 var CC = parseInt(prompt("Enter the century digits"));
-var gender = prompt("Enter your gende")
+var gender = prompt("Enter gender whether your a male or female")
 var dayOfTheWeek =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
 var answer = Math.floor(dayOfTheWeek);
 // var days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thusday","Friday","Surtaday"];
-var days = [0,1,2,3,4,5,6];
+// var days = [0,1,2,3,4,5,6];
 // if(days[0] && gender == female){
 //     alert("akosua");
 // }
@@ -32,50 +32,48 @@ var days = [0,1,2,3,4,5,6];
 //     alert("invalid Date")
 // }
 switch(true){
-    case answer===days && gender===female:
+    case answer===0 && gender==="female":
         alert("AKOSUA");
         break;
-    case answer===days && gender===female:
+    case answer===1 && gender==="female":
         alert("ADWOA");
         break; 
-    case answer===days && gender===female:
+    case answer===2 && gender==="female":
         alert("ABENAA");
         break;
-    case answer===days && gender===female:
+    case answer===3 && gender==="female":
         alert("AKUA");
         break;
-    case answer===days && gender===female:
+    case answer===4 && gender==="female":
         alert("YAA");
         break;
-    case answer===days && gender===female:
+    case answer===5 && gender==="female":
         alert("AFUA");
         break;
-    case answer===days && gender===female:
+    case answer===6 && gender==="female":
         alert("AMA");
         break;
-    case answer===days && gender===male:
+    case answer===0 && gender==="male":
         alert("KWASI");
         break;
-    case answer===days && gender===male:
+    case answer===1 && gender==="male":
         alert("KWADWO");
         break; 
-    case answer===days && gender===male:
+    case answer===2 && gender==="male":
         alert("KWEBENA");
         break;
-    case answer===days && gender===male:
+    case answer===3 && gender==="male":
         alert("KWAKU");
         break;
-    case answer===days && gender===male:
+    case answer===4 && gender==="male":
         alert("YAW");
         break;
-    case answer===days && gender===male:
+    case answer===5 && gender==="male":
         alert("KOFI");
         break;
-    case answer===days && gender===male:
+    case answer===6 && gender==="male":
         alert("KWAME");
         break;
     default:
         alert("Invalid days");
-    
-
 }
