@@ -84,5 +84,8 @@
 //         alert("Invalid days");
 // }
 function akanNames(){
-    
+    var date = new Date();
+    var YY = getFullYear();
+    var MM = getMonth();
+    var DD = getDate()
 }
