@@ -19,29 +19,32 @@
       </div>
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" id="form1">
               <h2>Akan names generator</h2>
               <h6>AKAN name web Application</h6>
               <p> This is web application that takes a user's birthday and calculates the day of the week 
                 they were born and then depending on their gender outputs their Akan Name. 
                 </p>
             </div>
-            <div class="col-md-6">
-              <h2>form</h2>
+            <div class="col-md-6" id="form">
+              <h2>Form</h2>
               <form action="/action_page.php" class="formPage">
                 <div class="jumbotron"> 
-                    <h2>Fill the form to know your Akan name</h2>
+                    <h3>Fill the form to know your Akan name</h3>
             </div>
-            <label for="birthDay" class="col-sm-3 control-label"> Date of Birth</label>
-            <input type="date" class="form-control" id="birthDate" placeholder="Date of birth">
-            <br>    
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">Female</label>
-            <br>
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">Male</label>
-            <br>
-                <input type="submit" value="Submit">
+            <label for="FName">First Name</label>
+            <input type="firstname" class="form-control" id="FName" placeholder="Firstname">
+            <label for="lastName">Last Name</label>
+            <input type="lastname" class="form-control" id="lastName" placeholder="Lastname">
+            <label for="birthDay">Date of Birth</label>
+            <input type="date" class="form-control" id="birthDate" placeholder="Date of birth">  
+            <label for="gender">GENDER</label>
+              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected id="gender1">Gender</option>
+                <option value="female" id="female1">Female</option>
+                <option value="male" id="male1">Male</option>
+              </select>
+              <button type="submit" class="btn btn-primary my-1" onclick="akanNames()">Submit</button>
               </form> 
               
              </div>

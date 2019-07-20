@@ -3,9 +3,18 @@
     padding: 25px;
     margin: 0 auto;
     background-color: #fff;
-    
-    
+ 
 }
+#form h2{
+    text-align: center;
+}
+#form1 h6{
+ font-size:20px;
+}
+#form1 h2{
+    font-size:40px;
+    font-family: "Times New Roman", Times, serif;
+   }
 
 /* h2{
     margin-left:5em;
