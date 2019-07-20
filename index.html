@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +17,6 @@
               the order in which they were born. These "day names" have further meanings concerning the soul and character of the person. 
               Middle names have considerably more variety and can refer to their birth order, twin status, or an ancestor's middle name.</p>
       </div>
-
         <div class="row">
             <div class="col-md-6" id="form1">
               <h2>Akan names generator</h2>
@@ -28,58 +27,32 @@
             </div>
             <div class="col-md-6" id="form">
               <h2>Form</h2>
-              <form action="/action_page.php" class="formPage">
+              <!-- <form> -->
                 <div class="jumbotron"> 
                     <h3>Fill the form to know your Akan name</h3>
             </div>
             <label for="FName">First Name</label>
             <input type="firstname" class="form-control" id="FName" placeholder="Firstname">
+            <br>
             <label for="lastName">Last Name</label>
             <input type="lastname" class="form-control" id="lastName" placeholder="Lastname">
+            <br>
             <label for="birthDay">Date of Birth</label>
-            <input type="date" class="form-control" id="birthDate" placeholder="Date of birth">  
+            <input type="date" class="form-control" id="birthDate" placeholder="Date of birth">
+            <br>  
             <label for="gender">GENDER</label>
-              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected id="gender1">Gender</option>
-                <option value="female" id="female1">Female</option>
-                <option value="male" id="male1">Male</option>
+              <select class="custom-select mr-sm-2" id="gender">
+                <!-- <option id="gender">Select your Gender</option> -->
+                <option id="female1">Female</option>
+                <option id="male1">Male</option>
               </select>
+              <br>
               <button type="submit" class="btn btn-primary my-1" onclick="akanNames()">Submit</button>
               <p id="display"></p>
-              </form> 
-              
-             </div>
-          </div>
-      <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <!-- <div class="r">
-        <h1>Akan name generator</h1>
-      </div>  
-        <form action="page" class="formPage"> 
-            <div class="jumbotron"> 
-                <h2>Please fill the form to know your Akan name</h2>
-        </div>
-            <div class="form-group">
-                <label for="birthDay" class="col-sm-3 control-label"> Date of Birth</label>
-                <input type="date" class="form-control" id="birthDate" placeholder="Date of birth">
+              <!-- </form>  -->
             </div>
-            <p>GENDER</p>
-            <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                      Female
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                      Male
-                    </label>
-                  </div>
-                  <button type="button" onclick="akanNames()">Submit</button>
-        </form> -->
-        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
+        </div>
     </div>
     <script src="script.js"></script>
-</body>
+ </body>
 </html>

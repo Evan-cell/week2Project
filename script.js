@@ -1,3 +1,4 @@
+var CC;
 function akanNames(){
     var firstname, lastname;
     firstname = document.getElementById("FName").value;
@@ -7,62 +8,82 @@ function akanNames(){
     var input = document.getElementById("birthDate").value;
     var data = new Date(input);
     var YY = data.getFullYear();
-    var MM = data.getMonth();
-    var DD = data.getDate();
     console.log(YY);
+    CC = (YY/100)+1;
+    console.log(CC);
+    var MM = data.getMonth();
+    MM++;
     console.log(MM);
+    var DD = data.getDate();
     console.log(DD);
-// var CC = parseInt(prompt("Enter the century digits"));
-// 
-var yourGender = document.getElementById("gender1")
-console.log(yourGender);
-var dayOfTheWeek =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-var answer = Math.floor(dayOfTheWeek);
-// var days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thusday","Friday","Surtaday"];
+    var Gender = document.getElementById("gender").value;
+    if(Gender === "female1"){
+        var gender1 ="Female";
+        console.log(gender1);
+    }
+    else{
+        gender1 = "male1";
+        console.log(gender1);
+    }
+    console.log(gender1);
+    // var Genderml = document.getElementById("male1").value;
+    // console.log(Genderml);
+    var dayOfTheWeek =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+    var answer = Math.floor(dayOfTheWeek);
+    console.log(answer);
+    var days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thusday","Friday","Surtaday"];
+    var a = days.indexOf("Sunday");
+    var b = days.indexOf("Monday");
+    var c = days.indexOf("Tuesday");
+    var d = days.indexOf("Wednesday");
+    var e = days.indexOf("Thusday");
+    var f = days.indexOf("Friday");
+    var g = days.indexOf("Surtaday");
 switch(true){
-    case answer===0 && gender==="female":
+    case (answer===a && gender1 ==="female1"):
         document.getElementById("display").innerHTML = "Your Akan name is AKOSUA";
         break;
-    case answer===1 && gender==="female":
+    case (answer===b && gender1==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is ADWOA";
         break; 
-    case answer===2 && gender==="female":
+    case (answer===c && gender1 ==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is ABENAA";
         break;
-    case answer===3 && gender==="female":
+    case (answer===d && gender1 ==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is AKUA";
         break;
-    case answer===4 && gender==="female":
+    case (answer===e && gender1 ==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is YAA";
         break;
-    case answer===5 && gender==="female":
+    case (answer===f && gender1 ==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is AFUA";
         break;
-    case answer===6 && gender==="female":
+    case (answer===g && gender1 ==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is AMA";
         break;
-    case answer===0 && gender==="male":
+    case (answer===a && gender1==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KWASI";
         break;
-    case answer===1 && gender==="male":
+    case (answer===b && gender1==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KWADWO";
         break; 
-    case answer===2 && gender==="male":
+    case (answer===c && gender1==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KWEBENA";
         break;
-    case answer===3 && gender==="male":
+    case (answer===d && gender1==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KWAKU";
         break;
-    case answer===4 && gender==="male":
+    case (answer===e && gender1==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is YAW";
         break;
-    case answer===5 && gender==="male":
+    case (answer===f && gender1==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KOFI";
         break;
-    case answer===6 && gender==="male":
+    case (answer===g && gender1==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KWAME";
         break;
     default:
-        alert("Invalid days");
+        document.getElementById("display").innerHTML = "Invalid days";
 }
 }
+console.log(akanNames());
