@@ -4,9 +4,11 @@ function akanNames(){
     console.log(firstname);
     lastname = document.getElementById(lastName).value;
     console.log(lastname);
-    var YY = document.getElementById("date1").value;
-    var MM = document.getElementById("date1").value;
-    var DD = document.getElementById("date1").value;
+    var input = document.getElementById(birthDate).value;
+    var data = new Date(input);
+    var YY = data.getFullYear();
+    var MM = data.getMonth();
+    var DD = data.getDate()
     console.log(YY);
     console.log(MM);
     console.log(DD);
@@ -86,9 +88,3 @@ switch(true){
     default:
         alert("Invalid days");
 }
-// function akanNames(){
-//     // var data = new Date();
-//     // var YY = data.getFullYear();
-//     // var MM = data.getMonth();
-//     // var DD = data.getDate()
-// }
