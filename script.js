@@ -33,7 +33,7 @@ function akanNames(){
     var g = days.indexOf("Surtaday");
 switch(true){
     case (answer===a && Genderfml ==="female1"):
-        document.getElementById("display").innerHTML = "Your Akan name is AKOSUA";
+        document.getElementById("display").innerHTML ="Your Akan name  is AKOSUA";
         break;
     case (answer===b && Genderfml==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is ADWOA";
