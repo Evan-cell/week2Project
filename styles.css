@@ -5,10 +5,14 @@
     border:3px solid#D6DBDF;
  
 }
-#form1 h2{
-    font-size:40px;
+#form1 h2,h6{
+    font-size: 30px;
     font-family: "Times New Roman", Times, serif;
    }
+#form1 p{
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
 .jumbotron{
     background: black;
     color: white;
