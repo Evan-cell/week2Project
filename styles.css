@@ -1,7 +1,8 @@
- .formPage{
+ #form{
     max-width: 600px;
+    max-height: 600px;
     padding: 25px;
-    border:2px solid#D6DBDF;
+    border:3px solid#D6DBDF;
  
 }
 #form1 h2{
@@ -11,4 +12,6 @@
 .jumbotron{
     background: black;
     color: white;
+     font-size:20px;
+    font-family: "Times New Roman", Times, serif;
 }
