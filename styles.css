@@ -1,5 +1,5 @@
  #form{
-    max-width: 600px;
+    max-width: 550px;
     max-height: 600px;
     padding: 25px;
     border:3px solid#D6DBDF;
@@ -13,9 +13,12 @@
     font-size: 20px;
     font-family: "Times New Roman", Times, serif;
 }
-.jumbotron{
+.jumbotron, .footer{
     background: black;
     color: white;
      font-size:20px;
     font-family: "Times New Roman", Times, serif;
+}
+.footer p{
+ text-align: center;
 }

@@ -75,7 +75,7 @@ switch(true){
         document.getElementById("display").innerHTML = "Your Akan name is KWAME";
         break;
     default:
-        document.getElementById("display").innerHTML = "Invalid days";
+        document.getElementById("display").innerHTML = "Invalid dates";
 }
 }
 console.log(akanNames());
