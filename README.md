@@ -1,17 +1,16 @@
 # week2Project
 #### This is a project that help user to know his/her Akan name . 
-####DATE
-20/7/2019
+####DATE 20/7/2019
 
 ## Description
 This is web application that takes a user's birthday and calculates the day of the week 
 they were born and then depending on their gender outputs their Akan Name. 
 ## Technologies Used
-1.html
-2.boostrap
-3.css 
-4.javascript
-5.visual studio code
+**html
+**boostrap
+**css 
+**javascript
+**visual studio code
 ## Support and mycontact
 Email:finaclemence15@gmail.com
 Phone number:0728947093
