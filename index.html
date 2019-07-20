@@ -10,8 +10,8 @@
 </head>
 <body>
     <div class="container">
-      <div class="header">
-          <h1>AKAN NAMES</h1>
+      <div class="jumbotron">
+          <h1> <strong>AKAN NAMES</strong></h1>
           <img src="https://logos.textgiraffe.com/logos/logo-name/Akan-designstyle-boots-m.png" alt="akan">
           <p>The Akan people of Ghana and the Ivory Coast frequently name their children after the day of the week they were born and 
               the order in which they were born. These "day names" have further meanings concerning the soul and character of the person. 
@@ -19,37 +19,35 @@
       </div>
         <div class="row">
             <div class="col-md-6" id="form1">
-              <h2>Akan names generator</h2>
-              <h6>AKAN name web Application</h6>
+              <h2><strong> Akan names generator</strong></h2>
+              <h6> <em>AKAN name web Application</em></h6>
               <p> This is web application that takes a user's birthday and calculates the day of the week 
                 they were born and then depending on their gender outputs their Akan Name. 
                 </p>
             </div>
             <div class="col-md-6" id="form">
-              <h2>Form</h2>
-              <!-- <form> -->
-                <div class="jumbotron"> 
-                    <h3>Fill the form to know your Akan name</h3>
-            </div>
-            <label for="FName">First Name</label>
-            <input type="firstname" class="form-control" id="FName" placeholder="Firstname">
-            <br>
-            <label for="lastName">Last Name</label>
-            <input type="lastname" class="form-control" id="lastName" placeholder="Lastname">
-            <br>
-            <label for="birthDay">Date of Birth</label>
-            <input type="date" class="form-control" id="birthDate" placeholder="Date of birth">
-            <br>  
-            <label for="gender">GENDER</label>
-              <select class="custom-select mr-sm-2" id="gender">
-                <!-- <option id="gender">Select your Gender</option> -->
-                <option id="female1">Female</option>
-                <option id="male1">Male</option>
-              </select>
-              <br>
-              <button type="submit" class="btn btn-primary my-1" onclick="akanNames()">Submit</button>
-              <p id="display"></p>
-              <!-- </form>  -->
+              <form class="formPage">
+                <h3><strong>Fill the form to know your Akan name</strong></h3>
+                <label for="FName">First Name</label>
+                <input type="firstname" class="form-control" id="FName" placeholder="Firstname">
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="lastname" class="form-control" id="lastName" placeholder="Lastname">
+                <br>
+                <label for="birthDay">Date of Birth</label>
+                <input type="date" class="form-control" id="birthDate" placeholder="Date of birth">
+                <br>  
+                <label for="gender">GENDER</label>
+                  <select class="custom-select mr-sm-2">
+                    <option id="gender">Select your Gender</option>
+                    <option id="female1">Female</option>
+                    <option id="male1">Male</option>
+                  </select>
+                  <br> <br>
+                  <button type="submit" class="btn btn-primary my-1" onclick="akanNames()">Submit</button><br>
+
+                  <br> <p id="display"></p>
+              </form> 
             </div>
         </div>
     </div>

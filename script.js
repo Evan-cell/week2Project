@@ -16,18 +16,10 @@ function akanNames(){
     console.log(MM);
     var DD = data.getDate();
     console.log(DD);
-    var Gender = document.getElementById("gender").value;
-    if(Gender === "female1"){
-        var gender1 ="Female";
-        console.log(gender1);
-    }
-    else{
-        gender1 = "male1";
-        console.log(gender1);
-    }
-    console.log(gender1);
-    // var Genderml = document.getElementById("male1").value;
-    // console.log(Genderml);
+    var Genderfml = document.getElementById("female1").value;
+    console.log(Genderfml);
+    Genderml = document.getElementById("male1").value;
+    console.log(Genderml);
     var dayOfTheWeek =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
     var answer = Math.floor(dayOfTheWeek);
     console.log(answer);
@@ -40,46 +32,46 @@ function akanNames(){
     var f = days.indexOf("Friday");
     var g = days.indexOf("Surtaday");
 switch(true){
-    case (answer===a && gender1 ==="female1"):
+    case (answer===a && Genderfml ==="female1"):
         document.getElementById("display").innerHTML = "Your Akan name is AKOSUA";
         break;
-    case (answer===b && gender1==="Female"):
+    case (answer===b && Genderfml==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is ADWOA";
         break; 
-    case (answer===c && gender1 ==="Female"):
+    case (answer===c && Genderfml ==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is ABENAA";
         break;
-    case (answer===d && gender1 ==="Female"):
+    case (answer===d && Genderfml ==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is AKUA";
         break;
-    case (answer===e && gender1 ==="Female"):
+    case (answer===e && Genderfml ==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is YAA";
         break;
-    case (answer===f && gender1 ==="Female"):
+    case (answer===f && Genderfml==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is AFUA";
         break;
-    case (answer===g && gender1 ==="Female"):
+    case (answer===g && Genderfml ==="Female"):
         document.getElementById("display").innerHTML = "Your Akan name is AMA";
         break;
-    case (answer===a && gender1==="Male"):
+    case (answer===a && Genderml==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KWASI";
         break;
-    case (answer===b && gender1==="Male"):
+    case (answer===b && Genderml==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KWADWO";
         break; 
-    case (answer===c && gender1==="Male"):
+    case (answer===c && Genderml==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KWEBENA";
         break;
-    case (answer===d && gender1==="Male"):
+    case (answer===d && Genderml==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KWAKU";
         break;
-    case (answer===e && gender1==="Male"):
+    case (answer===e && Genderml==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is YAW";
         break;
-    case (answer===f && gender1==="Male"):
+    case (answer===f && Genderml==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KOFI";
         break;
-    case (answer===g && gender1==="Male"):
+    case (answer===g && Genderml==="Male"):
         document.getElementById("display").innerHTML = "Your Akan name is KWAME";
         break;
     default:
