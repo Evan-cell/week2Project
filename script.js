@@ -23,14 +23,14 @@ function akanNames(){
     var dayOfTheWeek =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
     var answer = Math.floor(dayOfTheWeek);
     console.log(answer);
-    var days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thusday","Friday","Surtaday"];
+    var days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday"];
     var a = days.indexOf("Sunday");
     var b = days.indexOf("Monday");
     var c = days.indexOf("Tuesday");
     var d = days.indexOf("Wednesday");
-    var e = days.indexOf("Thusday");
+    var e = days.indexOf("Thursday");
     var f = days.indexOf("Friday");
-    var g = days.indexOf("Surtaday");
+    var g = days.indexOf("Saturdayday");
 switch(true){
     case (answer===a && Genderfml ==="female1"):
         document.getElementById("display").innerHTML ="Your Akan name  is AKOSUA";
