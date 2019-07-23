@@ -26,7 +26,7 @@
               <h6> <strong><em>AKAN name web Application</em></strong> </h6> <br>
               <p> This is web application that takes a user's birthday and calculates the day of the week 
                 they were born and then depending on their gender outputs their Akan Name. 
-                </p>
+              </p>
             </div>
             <div class="col-md-6" id="form">
                 <h3><strong>Fill the form to know your Akan name</strong></h3>
@@ -39,13 +39,12 @@
                 <label for="birthDay">Date of Birth</label>
                 <input type="date" class="form-control" id="birthDate" placeholder="Date of birth">
                 <br>  
-                <label for="gender">GENDER</label>
-                  <select class="custom-select mr-sm-2">
-                    <option id="gender">Select your Gender</option>
-                    <option id="female1">Female</option>
-                    <option id="male1">Male</option>
-                  </select>
-                  <br> <br>
+                  <div class="radio">
+                    <label for="gender">GENDER</label> <br>
+                    <label><input type="radio" name="optradio" checked>Female</label> <br>
+                    <label><input type="radio" name="optradio" checked>Male</label>
+                  </div>
+                  <br>
                   <button type="submit" class="btn btn-primary my-1" onclick="akanNames()">Submit</button><br>
 
                   <br> <p id="display"></p>
